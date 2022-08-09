@@ -1,0 +1,106 @@
+.wrapper {
+  position: relative;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.image {
+  object-fit: cover;
+  height: 400px;
+  width: 275px;
+}
+
+.title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Gray 400 */
+  height: 48px;
+  color: #434851;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.priceWrapper {
+  display: flex;
+}
+
+.price {
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+
+  color: #141a25;
+}
+.price.sale {
+  color: #f20d0d;
+}
+
+.oldPrice {
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+
+  text-decoration-line: line-through;
+
+  /* Gray 500 */
+
+  color: #141a25;
+}
+
+.parameter {
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  /* Gray 300 */
+
+  color: #72757c;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.parameters {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sale {
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.panel {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  margin: 16px;
+}
+
+.favorite {
+  margin-right: 66px;
+}
+.tags {
+  display: flex;
+  gap: 6px;
+}

@@ -1,0 +1,24 @@
+.main {
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #141a25;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: pointer;
+}
+.primary {
+  background: #cff4e2;
+}
+.primary:hover {
+  background: #70dda7;
+}
+.secondary {
+  background: #f6f6f6;
+}
+.secondary:hover {
+  background: #e2e2e2;
+}

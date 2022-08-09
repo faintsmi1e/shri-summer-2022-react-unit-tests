@@ -1,0 +1,21 @@
+.main {
+  font-size: 11px;
+  line-height: 14px;
+  /* identical to box height, or 127% */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 3px 5px;
+  display: flex;
+  align-self: center;
+}
+.red {
+  background: #f53d3d;
+}
+
+.green {
+  background: #11c66c;
+}

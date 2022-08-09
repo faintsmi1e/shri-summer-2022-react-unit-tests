@@ -7,6 +7,7 @@ const bouquetList = getBouquetList();
 
 export const App = () => <div className={styles.root}>
     <h1>Каталог</h1>
+    
     <div className={styles.list}>
         {
             bouquetList.map(bouquet => <ProductCard key={bouquet.id} {...bouquet} />)
