@@ -30,7 +30,7 @@ export const ProductCard = (props) => {
           {oldPrice && isSale && <Tag color={'green'} label={'скидка'} />}
         </span>
         <span className={css.favorite}>
-          {isFavorite ? <HeartIcon /> : <EmptyHeartIcon />}
+          {isFavorite ? <HeartIcon data-testid='product-icon-fill-heart'/> : <EmptyHeartIcon data-testid='product-icon-empty-heart'/>}
         </span>
       </div>
       <img
@@ -46,18 +46,19 @@ export const ProductCard = (props) => {
         <h3 className={css.title}>{flowersCount + ' ' + title}</h3>
         <p className={css.priceWrapper}>
           <span
+          data-testid='product-current-price'
             className={`${css.price} ${isSale && oldPrice ? css.sale : ''}`}
           >
             {currentPrice} ₽
           </span>
           {oldPrice && isSale && (
-            <span className={css.oldPrice}>{oldPrice} ₽</span>
+            <span data-testid='product-old-price' className={css.oldPrice}>{oldPrice} ₽</span>
           )}
         </p>
         <div className={css.parameters}>
           <span className={css.parameter}>
             <CountIcon></CountIcon>
-            {flowersCount} шт.
+            {flowersCount ?? 0} шт.
           </span>
           <span className={css.parameter}>
             <HeightIcon></HeightIcon>
@@ -70,8 +71,8 @@ export const ProductCard = (props) => {
         </div>
       </div>
       <div className={css.buttons}>
-        <Button>В корзину</Button>
-        <Button type='secondary'>Купить сразу</Button>
+        <Button data-testid="product-card-button" disabled={!flowersCount}>В корзину</Button>
+        <Button data-testid="product-buy-button" disabled={!flowersCount} type='secondary'>Купить сразу</Button>
       </div>
     </div>
   );

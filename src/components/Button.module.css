@@ -10,15 +10,18 @@
   flex-grow: 0;
   cursor: pointer;
 }
+.main:disabled {
+  pointer-events: none;
+}
 .primary {
   background: #cff4e2;
 }
-.primary:hover {
+.primary:hover:not(:disabled) {
   background: #70dda7;
 }
 .secondary {
   background: #f6f6f6;
 }
-.secondary:hover {
+.secondary:hover:not(:disabled) {
   background: #e2e2e2;
 }
